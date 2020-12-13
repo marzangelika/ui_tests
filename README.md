@@ -32,7 +32,6 @@ mvn test
 
 Before running the command make sure you are in the project's working directory.
 
-You can also run tests from Intellij by clicking on the `Maven` tab, expanding `Lifecycle` and double clicking on `tests`.
 
 ### **Technologies**
 
