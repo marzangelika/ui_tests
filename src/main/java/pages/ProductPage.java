@@ -9,7 +9,7 @@ public class ProductPage {
 
     public ProductPage addItemToCart() {
         addToCartButton.click();
-        return new ProductPage();
+        return this;
     }
 
     public void viewTheCart() {

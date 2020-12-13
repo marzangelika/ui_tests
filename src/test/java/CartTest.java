@@ -5,6 +5,7 @@ import pages.InventoryPage;
 import static com.codeborne.selenide.Selenide.open;
 
 public class CartTest {
+
     InventoryPage inventoryPage = new InventoryPage();
     CartPage cartPage = new CartPage();
 

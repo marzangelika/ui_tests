@@ -6,6 +6,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.url;
 
 public class SignInTest {
+
     SignInPage signInPage = new SignInPage();
 
     String userName = System.getenv("SAUCE_USERNAME");

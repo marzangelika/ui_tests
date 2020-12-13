@@ -11,19 +11,18 @@ public class SignInPage {
 
     public SignInPage setUserName(String userName) {
         userNameInput.setValue(userName);
-        return new SignInPage();
+        return this;
     }
 
     public SignInPage setPassword(String password) {
         passwordInput.setValue(password);
-        return new SignInPage();
+       return this;
     }
 
-    public InventoryPage signIn(String username, String password) {
+    public void signIn(String username, String password) {
         setUserName(username);
         setPassword(password);
         submit();
-        return new InventoryPage();
     }
 
     public String getErrorMessageText() {

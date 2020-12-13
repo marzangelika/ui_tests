@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="TestSuite" time="3.517" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="TestSuite" time="3.806" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.5+10-b520.30"/>
@@ -64,10 +64,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="SignInTest" name="incorrectDetailsErrorMessageTest" time="0.764"/>
-  <testcase classname="SignInTest" name="lockedOutUserErrorMessageTest" time="0.472"/>
-  <testcase classname="SignInTest" name="requiredPasswordErrorMessageTest" time="0.291"/>
-  <testcase classname="SignInTest" name="requiredUserNameErrorMessageTest" time="0.313"/>
-  <testcase classname="SignInTest" name="successfulSignInTest" time="1.062"/>
-  <testcase classname="CartTest" name="addToCartTest" time="0.615"/>
+  <testcase classname="SignInTest" name="incorrectDetailsErrorMessageTest" time="0.786"/>
+  <testcase classname="SignInTest" name="lockedOutUserErrorMessageTest" time="0.522"/>
+  <testcase classname="SignInTest" name="requiredPasswordErrorMessageTest" time="0.324"/>
+  <testcase classname="SignInTest" name="requiredUserNameErrorMessageTest" time="0.279"/>
+  <testcase classname="SignInTest" name="successfulSignInTest" time="1.309"/>
+  <testcase classname="CartTest" name="addToCartTest" time="0.586"/>
 </testsuite>
