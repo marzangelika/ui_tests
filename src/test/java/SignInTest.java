@@ -44,4 +44,14 @@ public class SignInTest {
         Assert.assertEquals(expectedRequiredPasswordErrorMessage, signInPage.getErrorMessageText());
     }
 
+    @Test
+    public void requiredUserNameErrorMessageTest() {
+        open(baseUrl);
+
+        signInPage.setPassword(password).submit();
+
+        String expectedRequiredUserNameErrorMessage = "Epic sadface: Username is required";
+        Assert.assertEquals(expectedRequiredUserNameErrorMessage, signInPage.getErrorMessageText());
+    }
+
 }
