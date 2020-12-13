@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-13T17:47:07 CET" name="Command line suite" finished-at="2020-12-13T17:47:35 CET" duration-ms="27964">
+  <suite started-at="2020-12-13T19:45:52 CET" name="Command line suite" finished-at="2020-12-13T19:46:01 CET" duration-ms="8747">
     <groups>
     </groups>
-    <test started-at="2020-12-13T17:47:07 CET" name="Command line test" finished-at="2020-12-13T17:47:35 CET" duration-ms="27964">
+    <test started-at="2020-12-13T19:45:52 CET" name="Command line test" finished-at="2020-12-13T19:46:01 CET" duration-ms="8747">
       <class name="SignInTest">
-        <test-method signature="incorrectDetailsErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T17:47:32 CET" name="incorrectDetailsErrorMessageTest" finished-at="2020-12-13T17:47:33 CET" duration-ms="518" status="PASS">
+        <test-method signature="incorrectDetailsErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T19:45:59 CET" name="incorrectDetailsErrorMessageTest" finished-at="2020-12-13T19:45:59 CET" duration-ms="743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectDetailsErrorMessageTest -->
-        <test-method signature="lockedOutUserErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T17:47:33 CET" name="lockedOutUserErrorMessageTest" finished-at="2020-12-13T17:47:33 CET" duration-ms="425" status="PASS">
+        <test-method signature="lockedOutUserErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T19:45:59 CET" name="lockedOutUserErrorMessageTest" finished-at="2020-12-13T19:46:00 CET" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lockedOutUserErrorMessageTest -->
-        <test-method signature="requiredPasswordErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T17:47:33 CET" name="requiredPasswordErrorMessageTest" finished-at="2020-12-13T17:47:34 CET" duration-ms="305" status="PASS">
+        <test-method signature="requiredPasswordErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T19:46:00 CET" name="requiredPasswordErrorMessageTest" finished-at="2020-12-13T19:46:00 CET" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- requiredPasswordErrorMessageTest -->
-        <test-method signature="requiredUserNameErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T17:47:34 CET" name="requiredUserNameErrorMessageTest" finished-at="2020-12-13T17:47:34 CET" duration-ms="311" status="PASS">
+        <test-method signature="requiredUserNameErrorMessageTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T19:46:00 CET" name="requiredUserNameErrorMessageTest" finished-at="2020-12-13T19:46:01 CET" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- requiredUserNameErrorMessageTest -->
-        <test-method signature="successfulSignInTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T17:47:34 CET" name="successfulSignInTest" finished-at="2020-12-13T17:47:35 CET" duration-ms="503" status="PASS">
+        <test-method signature="successfulSignInTest()[pri:0, instance:SignInTest@313b2ea6]" started-at="2020-12-13T19:46:01 CET" name="successfulSignInTest" finished-at="2020-12-13T19:46:01 CET" duration-ms="456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulSignInTest -->
       </class> <!-- SignInTest -->
       <class name="CartTest">
-        <test-method signature="addToCartTest()[pri:0, instance:CartTest@2f465398]" started-at="2020-12-13T17:47:07 CET" name="addToCartTest" finished-at="2020-12-13T17:47:32 CET" duration-ms="25856" status="PASS">
+        <test-method signature="addToCartTest()[pri:0, instance:CartTest@2f465398]" started-at="2020-12-13T19:45:52 CET" name="addToCartTest" finished-at="2020-12-13T19:45:59 CET" duration-ms="6427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartTest -->
