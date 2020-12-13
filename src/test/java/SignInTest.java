@@ -12,6 +12,7 @@ public class SignInTest {
     String baseUrl = System.getenv("SAUCE_URL");
     String userName = System.getenv("SAUCE_USERNAME");
     String incorrectUserName = "test";
+    String lockedOutUserName = "locked_out_user";
     String password = System.getenv("SAUCE_PASSWORD");
 
     @Test
@@ -52,6 +53,17 @@ public class SignInTest {
 
         String expectedRequiredUserNameErrorMessage = "Epic sadface: Username is required";
         Assert.assertEquals(expectedRequiredUserNameErrorMessage, signInPage.getErrorMessageText());
+    }
+
+    @Test
+    public void lockedOutUserErrorMessageTest() {
+        open(baseUrl);
+
+        signInPage.signIn(lockedOutUserName, password);
+
+        String expectedLockedOutUserErrorMessage = "Epic sadface: Sorry, this user has been locked out.";
+        Assert.assertEquals(expectedLockedOutUserErrorMessage, signInPage.getErrorMessageText());
+
     }
 
 }
