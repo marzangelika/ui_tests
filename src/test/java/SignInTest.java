@@ -1,26 +1,18 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.SignInPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.url;
 
-public class SignInTest {
+public class SignInTest extends BaseTest {
 
-    SignInPage signInPage = new SignInPage();
-
-    String baseUrl = System.getenv("SAUCE_URL");
-    String userName = System.getenv("SAUCE_USERNAME");
-    String incorrectUserName = "test";
-    String lockedOutUserName = "locked_out_user";
-    String password = System.getenv("SAUCE_PASSWORD");
 
     @Test
     public void successfulSignInTest() {
         open(baseUrl);
 
         signInPage.signIn(userName, password);
-        String expectedUrl = baseUrl + "/inventory.html";
+        String expectedUrl = inventoryPageUrl;
 
         Assert.assertEquals(expectedUrl, url());
     }
