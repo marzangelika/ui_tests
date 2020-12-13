@@ -6,9 +6,9 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CartPage {
-    SelenideElement cartItem = $(new Selectors.ByText("Sauce Labs Backpack"));
 
-    public SelenideElement getCartItem() {
-        return cartItem;
+
+    public SelenideElement getCartItem(String product) {
+        return $(new Selectors.ByText(product));
     }
 }

@@ -11,7 +11,7 @@ public class CartTest extends BaseTest {
         open(inventoryPageUrl);
         inventoryPage.selectItem(product).addItemToCart().viewTheCart();
 
-        boolean isItemInTheCart = cartPage.getCartItem().isDisplayed();
+        boolean isItemInTheCart = cartPage.getCartItem(product).isDisplayed();
 
         Assert.assertTrue(isItemInTheCart);
     }
