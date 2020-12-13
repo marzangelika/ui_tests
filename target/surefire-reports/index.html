@@ -212,7 +212,6 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;SignInTest&quot;/&gt;
-      &lt;class name=&quot;BaseTest&quot;/&gt;
       &lt;class name=&quot;CartTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
@@ -227,7 +226,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (3 classes)</span>
+                <span class="test-name">Command line test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,34 +254,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addToCartTest')
-data.setCell(0, 2, 'CartTest')
-data.setCell(0, 3, 6427);
+data.setCell(0, 1, 'successfulSignInTest')
+data.setCell(0, 2, 'SignInTest')
+data.setCell(0, 3, 1151);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'incorrectDetailsErrorMessageTest')
 data.setCell(1, 2, 'SignInTest')
-data.setCell(1, 3, 743);
+data.setCell(1, 3, 722);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'lockedOutUserErrorMessageTest')
-data.setCell(2, 2, 'SignInTest')
-data.setCell(2, 3, 496);
+data.setCell(2, 1, 'addToCartTest')
+data.setCell(2, 2, 'CartTest')
+data.setCell(2, 3, 612);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'successfulSignInTest')
+data.setCell(3, 1, 'lockedOutUserErrorMessageTest')
 data.setCell(3, 2, 'SignInTest')
-data.setCell(3, 3, 456);
+data.setCell(3, 3, 437);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'requiredPasswordErrorMessageTest')
 data.setCell(4, 2, 'SignInTest')
-data.setCell(4, 3, 296);
+data.setCell(4, 3, 275);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'requiredUserNameErrorMessageTest')
 data.setCell(5, 2, 'SignInTest')
-data.setCell(5, 3, 287);
+data.setCell(5, 3, 252);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -308,33 +307,53 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">CartTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addToCartTest</span>
+              <div class="chronological-class-name">SignInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openSignInPageUrl</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">incorrectDetailsErrorMessageTest</span>
+                <span class="method-start">4624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openSignInPageUrl</span>
+                <span class="method-start">5350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">lockedOutUserErrorMessageTest</span>
+                <span class="method-start">5457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openSignInPageUrl</span>
+                <span class="method-start">5896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">requiredPasswordErrorMessageTest</span>
+                <span class="method-start">5980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openSignInPageUrl</span>
+                <span class="method-start">6256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">requiredUserNameErrorMessageTest</span>
+                <span class="method-start">6346 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openSignInPageUrl</span>
+                <span class="method-start">6599 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulSignInTest</span>
+                <span class="method-start">6698 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">SignInTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CartTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">incorrectDetailsErrorMessageTest</span>
-                <span class="method-start">6433 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">lockedOutUserErrorMessageTest</span>
-                <span class="method-start">7176 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">requiredPasswordErrorMessageTest</span>
-                <span class="method-start">7673 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">requiredUserNameErrorMessageTest</span>
-                <span class="method-start">7970 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">successfulSignInTest</span>
-                <span class="method-start">8257 ms</span>
+                <span class="method-name">addToCartTest</span>
+                <span class="method-start">7851 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

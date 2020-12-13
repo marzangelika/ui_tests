@@ -5,9 +5,12 @@
     <classes>
       <class name="SignInTest">
         <methods>
+          <include name="lockedOutUserErrorMessageTest"/>
+          <include name="successfulSignInTest"/>
           <include name="openSignInPage"/>
           <include name="requiredUserNameErrorMessageTest"/>
           <include name="requiredPasswordErrorMessageTest"/>
+          <include name="incorrectDetailsErrorMessageTest"/>
         </methods>
       </class> <!-- SignInTest -->
     </classes>

@@ -1,4 +1,5 @@
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.SignInPage;
 
@@ -15,11 +16,13 @@ public class SignInTest {
     String baseUrl = System.getenv("SAUCE_URL");
     String inventoryPageUrl = baseUrl + "/inventory.html";
 
+    @BeforeMethod
+    public void openSignInPageUrl() {
+        open(baseUrl);
+    }
 
     @Test
     public void successfulSignInTest() {
-        open(baseUrl);
-
         signInPage.signIn(userName, password);
         String expectedUrl = inventoryPageUrl;
 
@@ -28,8 +31,6 @@ public class SignInTest {
 
     @Test
     public void incorrectDetailsErrorMessageTest() {
-        open(baseUrl);
-
         signInPage.setUserName(incorrectUserName).setPassword(password).submit();
         String expectedIncorrectDetailsErrorMessage = "Epic sadface: Username and password do not match any user in this service";
 
@@ -38,8 +39,6 @@ public class SignInTest {
 
     @Test
     public void requiredPasswordErrorMessageTest() {
-        open(baseUrl);
-
         signInPage.setUserName(userName).submit();
 
         String expectedRequiredPasswordErrorMessage = "Epic sadface: Password is required";
@@ -48,8 +47,6 @@ public class SignInTest {
 
     @Test
     public void requiredUserNameErrorMessageTest() {
-        open(baseUrl);
-
         signInPage.setPassword(password).submit();
 
         String expectedRequiredUserNameErrorMessage = "Epic sadface: Username is required";
@@ -58,13 +55,10 @@ public class SignInTest {
 
     @Test
     public void lockedOutUserErrorMessageTest() {
-        open(baseUrl);
-
         signInPage.signIn(lockedOutUserName, password);
 
         String expectedLockedOutUserErrorMessage = "Epic sadface: Sorry, this user has been locked out.";
         Assert.assertEquals(expectedLockedOutUserErrorMessage, signInPage.getErrorMessageText());
-
     }
 
 }
