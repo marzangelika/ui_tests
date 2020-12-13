@@ -11,6 +11,7 @@ public class SignInTest {
 
     String baseUrl = System.getenv("SAUCE_URL");
     String userName = System.getenv("SAUCE_USERNAME");
+    String incorrectUserName = "test";
     String password = System.getenv("SAUCE_PASSWORD");
 
     @Test
@@ -22,4 +23,15 @@ public class SignInTest {
 
         Assert.assertEquals(expectedUrl, url());
     }
+
+    @Test
+    public void incorrectDetailsErrorMessageTest() {
+        open(baseUrl);
+
+        signInPage.setUserName(incorrectUserName).setPassword(password).submit();
+        String expectedIncorrectDetailsErrorMessage = "Epic sadface: Username and password do not match any user in this service";
+
+        Assert.assertEquals(signInPage.getErrorMessageText(), expectedIncorrectDetailsErrorMessage);
+    }
+
 }
