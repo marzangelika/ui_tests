@@ -2,7 +2,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CartPage;
 import pages.InventoryPage;
-
 import static com.codeborne.selenide.Selenide.open;
 
 public class CartTest {
@@ -21,5 +20,4 @@ public class CartTest {
         boolean isItemInTheCart = cartPage.getCartItem(product).isDisplayed();
         Assert.assertTrue(isItemInTheCart);
     }
-
 }

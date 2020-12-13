@@ -2,7 +2,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.SignInPage;
-
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.url;
 
@@ -24,16 +23,16 @@ public class SignInTest {
     @Test
     public void successfulSignInTest() {
         signInPage.signIn(userName, password);
-        String expectedUrl = inventoryPageUrl;
 
+        String expectedUrl = inventoryPageUrl;
         Assert.assertEquals(expectedUrl, url());
     }
 
     @Test
     public void incorrectDetailsErrorMessageTest() {
         signInPage.setUserName(incorrectUserName).setPassword(password).submit();
-        String expectedIncorrectDetailsErrorMessage = "Epic sadface: Username and password do not match any user in this service";
 
+        String expectedIncorrectDetailsErrorMessage = "Epic sadface: Username and password do not match any user in this service";
         Assert.assertEquals(signInPage.getErrorMessageText(), expectedIncorrectDetailsErrorMessage);
     }
 
@@ -60,5 +59,4 @@ public class SignInTest {
         String expectedLockedOutUserErrorMessage = "Epic sadface: Sorry, this user has been locked out.";
         Assert.assertEquals(expectedLockedOutUserErrorMessage, signInPage.getErrorMessageText());
     }
-
 }

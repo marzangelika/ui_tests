@@ -1,20 +1,18 @@
 package pages;
-
 import com.codeborne.selenide.SelenideElement;
-
 import static com.codeborne.selenide.Selenide.$;
 
 public class SignInPage {
+
     private SelenideElement userNameInput = $("#user-name"),
-            passwordInput = $("#password"),
-            loginButton = $("#login-button"),
-            errorMessage = $("[data-test='error']");
+                            passwordInput = $("#password"),
+                            loginButton = $("#login-button"),
+                            errorMessage = $("[data-test='error']");
 
     public SignInPage setUserName(String userName) {
         userNameInput.setValue(userName);
         return new SignInPage();
     }
-
 
     public SignInPage setPassword(String password) {
         passwordInput.setValue(password);
@@ -31,7 +29,6 @@ public class SignInPage {
     public String getErrorMessageText() {
         return errorMessage.getText();
     }
-
 
     public void submit() {
         loginButton.click();
